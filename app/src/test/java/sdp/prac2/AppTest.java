@@ -6,5 +6,27 @@ package sdp.prac2;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.*;
+
 class AppTest {
+    //Arrange
+    @Test void TestTask4() {
+        SimpleFunctions testCases = new SimpleFunctions();
+        List<Integer> a = Arrays.asList(45,12,19,89);
+        List<Integer> b = Arrays.asList(13,21,1,70);
+        List<Integer> expected = Arrays.asList(3150,12,399,1157);
+
+        //Act
+        SimpleFunctions testCases = new SimpleFunctions();
+        List<Integer> results = testCases.Task2(data);
+
+        //Assert
+
+        assertIterableEquals(expected,results);
+
+
+        
+
+    }
+
 }
