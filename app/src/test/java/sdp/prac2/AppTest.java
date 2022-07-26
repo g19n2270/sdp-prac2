@@ -3,8 +3,33 @@
  */
 package sdp.prac2;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+package org.testng.test;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;]\
+
+//Assert.assertEquals(testscases)
 
 class AppTest {
+
+    @Test void task6() {
+          List<Integer> num2 = new ArrayList<Integer>();
+        int length = perfect.size();
+        for (int i= 0; i<length; i++ ){
+            num2.add(perfect.get(i));
+
+        }
+        Collections.sort(perfect);
+        for (int i=0; i < length; i++){
+            if (perfect.get(i) != num2.get(i)){
+                return false;
+            }
+            else{
+                return true;
+            }
+            
+        }
+
+        }
+
 }
